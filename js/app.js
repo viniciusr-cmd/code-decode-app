@@ -80,6 +80,19 @@ function decode64(){
 
 
 // ----------------------------------- EVENTS -----------------------------------
+
+opt.addEventListener('click', () => {
+    console.log(opt.value)
+    if(opt.value == 'cifra'){
+        document.querySelector('#incrementBox').style.display = 'block'
+    }
+    
+    else if(opt.value == 'base64'){
+    document.querySelector('#incrementBox').style.display = 'none'
+    }
+})
+
+
 radioCode.addEventListener('click', () => {
     console.log('clicou code')
 
@@ -91,6 +104,7 @@ radioCode.addEventListener('click', () => {
 
 radioDecode.addEventListener('click', () => {
     console.log('clicou decode')
+
     if(radioDecode.value == 2){
         btndecode.style.display = 'flex'
         btncode.style.display = 'none'
