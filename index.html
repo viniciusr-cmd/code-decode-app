@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/app.js" defer></script>
-    <link rel="stylesheet" href="./style/style.css">
+    <script src="js/app.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
@@ -20,19 +20,22 @@
             <div class="options">
                 <select name="options" id="opt">
                     <optgroup>
-                        <option class="hatSelector" disabled selected value="0">Selecione uma opção</option>
-                        <option class="hatSelector" value="cifra">Cifra de César</option>
-                        <option class="hatSelector" value="base64">BASE64</option>
+                        <option disabled selected>Selecione uma opção</option>
+                        <option value="cifra">Cifra de César</option>
+                        <option value="base64">BASE64</option>
                     </optgroup>
                 </select>
             </div>
 
             <div id="selectBox">
                 <h3>Selecione Encode/Decode</h3>
-                <input type="radio" id="radioCodificar" value="1" checked name="radio">
+                <input type="radio" id="radioCodificar" value="1" name="radio">
                 <label for="radio">Encode</label>
                 <input type="radio" id="radioDecodificar" value="2" name="radio">
                 <label for="radio">Decode</label>
+            </div>
+
+            <div id="incrementBox">
                 <h3>Selecione o incremento</h3>
                 <input type="number" id="incremento" name="increment" min="1" max="26">
             </div>
