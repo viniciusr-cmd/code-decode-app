@@ -31,7 +31,7 @@ body, html {
     border: 2px solid white;
     border-radius: 20px;
     padding: 140px;
-    background-color: rgba(200, 200, 200, 0.200);
+    background-color: rgba(200, 200, 200, 0.100);
     font-size: 30px;
     text-shadow: 2px 2px black;
 }
@@ -68,7 +68,10 @@ body, html {
     font-size: 0.5em;
 }
 
-#number-increment{
+#incremento{
     width: 20%;
+    border: solid 5px black;
+    padding: 10px;
 }
+
 
