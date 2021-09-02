@@ -2,6 +2,7 @@
 //Collect user input data
 let receiveData
 let increment
+// ----------------------------------- DOM VARIABLE DECLARATIONS -----------------------------------
 let input = document.querySelector('#input')
 let output = document.querySelector('#output')
 let selected = document.querySelector('#opt')
@@ -82,19 +83,20 @@ function decode64(){
 // ----------------------------------- EVENTS -----------------------------------
 
 opt.addEventListener('click', () => {
-    console.log(opt.value)
+    
     if(opt.value == 'cifra'){
         document.querySelector('#incrementBox').style.display = 'block'
+        document.querySelector('.selectDiv').style.background = 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Nova_Roma_Flag.svg/1200px-Nova_Roma_Flag.svg.png) 50%'
     }
     
     else if(opt.value == 'base64'){
     document.querySelector('#incrementBox').style.display = 'none'
+    document.querySelector('.selectDiv').style.background = 'url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFja2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80) 50%'
     }
 })
 
 
 radioCode.addEventListener('click', () => {
-    console.log('clicou code')
 
     if(radioCode.value == 1){
         btncode.style.display = 'flex'
@@ -103,7 +105,6 @@ radioCode.addEventListener('click', () => {
 })
 
 radioDecode.addEventListener('click', () => {
-    console.log('clicou decode')
 
     if(radioDecode.value == 2){
         btndecode.style.display = 'flex'
@@ -116,7 +117,6 @@ btncode.addEventListener('click', () => {
     let cript = document.querySelector('#radioCodificar')
 
     if(cript.checked){
-        console.log('checou')
         if(selected.value == 'cifra'){
             increment = parseInt(document.querySelector('#incremento').value)
             output.innerText = encode()
@@ -132,7 +132,6 @@ btndecode.addEventListener('click', () => {
     let decript = document.querySelector('#radioDecodificar')
 
     if(decript.checked){
-        console.log('dechecou')
         if(selected.value == 'cifra'){
             increment = parseInt(document.querySelector('#incremento').value)
             output.innerText = decode()
