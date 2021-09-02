@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <section class="select">
+        <div class="selectDiv">
+            <h3>Selecione sua opção</h3>
+
+            <div class="options">
+                <select name="options" id="opt">
+                    <optgroup>
+                        <option class="hatSelector" disabled selected value="0">Selecione uma opção</option>
+                        <option class="hatSelector" value="cifra">Cifra de César</option>
+                        <option class="hatSelector" value="base64">BASE64</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div id="selectBox">
+                <h3>Selecione Encode/Decode</h3>
+                <input type="radio" id="radioCodificar" value="1" checked name="radio">
+                <label for="radio">Encode</label>
+                <input type="radio" id="radioDecodificar" value="2" name="radio">
+                <label for="radio">Decode</label>
+                <h3>Selecione o incremento</h3>
+                <input type="number" id="incremento" name="increment" min="1" max="26">
+            </div>
+
+            <div id="submittxt" class="pandoraBox">
+                <label for="text">Digite Aqui</label><br>
+                <textarea name="" id="input" cols="60" rows="10"></textarea>
+                <button id="code" value="codificar" style="display: none;">Codificar!</button>
+                <button id="decode" value="decodificar" style="display: none;">Decodificar!</button>
+            </div>
+
+            <div id="result" class="pandoraBox">
+                <h3>Resultado</h3>
+                <textarea name="output" id="output" cols="60" rows="10"></textarea>
+            </div>
+        </div>
+      </section>
+    </div>
+</body>
+</html>

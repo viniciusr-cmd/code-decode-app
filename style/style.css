@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mitr', sans-serif;
+    
+}
+
+body, html {
+    display: flex;
+    background: url(/assets/original.gif) no-repeat 50% fixed;
+    background-color: black;
+    height:100%;
+    width:100%;
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.selectDiv {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 140px;
+    background-color: rgba(200, 200, 200, 0.200);
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+}
+
+#opt {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#code, #decode {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 7em;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#code:hover, #decode:hover {
+    background-color: black;
+    color: white;
+    transition: 500ms;
+}
+
+
+.pandoraBox textarea {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 0.5em;
+}
+
+#number-increment{
+    width: 20%;
+}
+
